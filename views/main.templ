@@ -1,0 +1,21 @@
+package views
+
+import "gojob/views/components"
+import "gojob/views/layout"
+
+templ Main() {
+    @layout.Layout(layout.LayoutProps{
+        Title: "Find your AI agent",
+        MetaDescription: "Website for finding best AI agent",
+    }) {
+        <main>
+            @layout.Header() {
+            @components.Title("Find the best AI agent")
+            @components.SubTitle("Simple search for AI agent")
+
+            }
+            Main
+        </main>
+    }
+
+}

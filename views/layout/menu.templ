@@ -1,0 +1,43 @@
+package layout
+
+import "gojob/views/components"
+
+templ Menu() {
+    @MenuStyle()
+
+    <div class="menu">
+        <div class="menu__logo">Logo</div>
+        <div class="menu__right">
+            <a class="menu__right-link"> Log in</a>
+            @components.LinkButton("/register") {
+                <span>Register</span>
+            }
+        </div>
+    </div>
+}
+
+templ MenuStyle() {
+      <style>
+        .menu {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 0;
+            max-width: 1290px;
+            align-items: center;
+        }
+        .menu__right {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+        }
+        .menu__right-link {
+            text-decoration: none;
+            color: var(--color-white);
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .menu__right-link:hover {
+            color: #9f9f9f;
+        }
+    </style>
+}
