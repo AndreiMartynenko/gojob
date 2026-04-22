@@ -1,7 +1,7 @@
 package home
 
 import (
-	"gojob/tadapter"
+	"gojob/pkg/tadapter"
 	"gojob/views"
 
 	"github.com/gofiber/fiber/v2"
