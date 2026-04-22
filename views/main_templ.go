@@ -60,7 +60,7 @@ func Main() templ.Component {
 					}()
 				}
 				ctx = templ.InitializeContext(ctx)
-				templ_7745c5c3_Err = components.Title("Find the best AI agent").Render(ctx, templ_7745c5c3_Buffer)
+				templ_7745c5c3_Err = components.Title("Find your dream job").Render(ctx, templ_7745c5c3_Buffer)
 				if templ_7745c5c3_Err != nil {
 					return templ_7745c5c3_Err
 				}
@@ -68,7 +68,7 @@ func Main() templ.Component {
 				if templ_7745c5c3_Err != nil {
 					return templ_7745c5c3_Err
 				}
-				templ_7745c5c3_Err = components.SubTitle("Simple search for AI agent").Render(ctx, templ_7745c5c3_Buffer)
+				templ_7745c5c3_Err = components.SubTitle("Simple search for dream jobs").Render(ctx, templ_7745c5c3_Buffer)
 				if templ_7745c5c3_Err != nil {
 					return templ_7745c5c3_Err
 				}
@@ -85,8 +85,8 @@ func Main() templ.Component {
 			return nil
 		})
 		templ_7745c5c3_Err = layout.Layout(layout.LayoutProps{
-			Title:           "Find your AI agent",
-			MetaDescription: "Website for finding best AI agent",
+			Title:           "Find your dream job",
+			MetaDescription: "Website for finding best job",
 		}).Render(templ.WithChildren(ctx, templ_7745c5c3_Var2), templ_7745c5c3_Buffer)
 		if templ_7745c5c3_Err != nil {
 			return templ_7745c5c3_Err
