@@ -1,7 +1,5 @@
 package main
 
-// Check again
-
 import (
 	"gojob/config"
 	"gojob/internal/home"
